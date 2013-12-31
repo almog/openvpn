@@ -29,6 +29,7 @@ default['openvpn']['key_dir']         = '/etc/openvpn/keys'
 default['openvpn']['signing_ca_key']  = "#{node["openvpn"]["key_dir"]}/ca.key"
 default['openvpn']['signing_ca_cert'] = "#{node["openvpn"]["key_dir"]}/ca.crt"
 default['openvpn']['routes']          = []
+default['openvpn']['add_nat_rules']   = false
 default['openvpn']['script_security'] = 1
 # set this to false if you want to just use the lwrp
 default['openvpn']['configure_default_server'] = true
